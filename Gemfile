@@ -25,20 +25,31 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'haml-rails'
-#you need to run "find . -name \*.erb -print | sed 'p;s/.erb$/.haml/' | xargs -n2 html2haml"
+
+# you need to run "find . -name \*.erb -print | sed 'p;s/.erb$/.haml/' | xargs -n2 html2haml"
 gem 'html2haml'
+
 gem 'bootstrap-sass', '~> 3.2.0'
+# copy this line to application.css and application.js
+# @import "bootstrap-sprockets";
+# @import "bootstrap";
+# //= require bootstrap-sprockets
+
 gem 'autoprefixer-rails'
 gem 'devise', '~> 3.2.0'
-#you need to run "rails generate active_admin:install" and migrate
+
+# you need to run "rails generate active_admin:install" and migrate
 gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :development do
   gem 'guard'
+
   #you need to run "guard init livereload"
   gem 'guard-livereload', require: false
+
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'meta_request'
 end
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

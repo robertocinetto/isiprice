@@ -1,0 +1,37 @@
+.container
+  .row
+    %p#notice= notice
+  .row
+    %p
+      %b Name:
+      = @professional.name
+    %p
+      %b Last name:
+      = @professional.last_name
+
+  .row
+    %h2 Comments
+    - @professional.comments.each do |comment|
+      %p
+        %strong Commenter
+        = comment.commenter
+      %p
+        %strong Comment
+        = comment.body
+
+  .row
+    %h2 Add a comment
+    = form_for([@professional, @professional.comments.build]) do |f|
+      %p
+        = f.label :commenter
+        = f.text_field :commenter
+      %p
+        = f.label :body
+        = f.text_area :body
+      %p
+        = f.submit
+
+
+    = link_to 'Edit', edit_professional_path(@professional)
+    \|
+    = link_to 'Back', professionals_path
