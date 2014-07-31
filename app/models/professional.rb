@@ -1,6 +1,8 @@
 class Professional < ActiveRecord::Base
   has_many :comments
 
+  mount_uploader :profile_img, ImageUploader
+
   validates :name, presence: true
   validates :last_name, presence: true
   validates :email, presence: true, uniqueness: true

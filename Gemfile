@@ -38,6 +38,9 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'devise', '~> 3.2.0'
 
+gem 'rmagick', :require => 'RMagick'
+gem 'carrierwave'
+
 # you need to run "rails generate active_admin:install" and migrate
 gem 'activeadmin', github: 'gregbell/active_admin'
 
