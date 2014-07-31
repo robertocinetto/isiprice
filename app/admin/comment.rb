@@ -1,6 +1,16 @@
-ActiveAdmin.register Comment, :as => "ProfessionalComment" do
+ActiveAdmin.register Comment do
+
+  index do
+    column :id
+    column :commenter
+    column :body
+    column :updated_at
+    actions defaults: true
 
 
+    column :approved
+
+  end
   # See permitted parameters documentation:
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -13,5 +23,5 @@ ActiveAdmin.register Comment, :as => "ProfessionalComment" do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-  permit_params :commenter, :body
+  permit_params :commenter, :body, :approved
 end

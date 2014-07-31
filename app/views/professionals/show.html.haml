@@ -2,36 +2,47 @@
   .row
     %p#notice= notice
   .row
-    %p
-      %b Name:
-      = @professional.name
-    %p
-      %b Last name:
-      = @professional.last_name
+    .col-md-2
+      %p
+        %b Name:
+        = @professional.name
+      %p
+        %b Last name:
+        = @professional.last_name
 
   .row
-    %h2 Comments
-    - @professional.comments.each do |comment|
-      %p
-        %strong Commenter
-        = comment.commenter
-      %p
-        %strong Comment
-        = comment.body
+    .col-md-2
+      %h2 Comments
+  .row
+    .col-md-2
+      - @professional.comments.each do |comment|
+        - if comment.approved
+          %p
+            %strong Commenter
+            = comment.commenter
+          %p
+            %strong Comment
+            = comment.body
 
   .row
-    %h2 Add a comment
-    = form_for([@professional, @professional.comments.build]) do |f|
-      %p
-        = f.label :commenter
-        = f.text_field :commenter
-      %p
-        = f.label :body
-        = f.text_area :body
-      %p
-        = f.submit
+    .col-md-4
+      %h2 Add a comment
+  .row
+    .col-md-4
+      = form_for([@professional, @professional.comments.build],html: { role: 'form', class: 'form-horizontal' })  do |f|
+        .form-group
+          .col-md-12
+            %p
+              = f.label :commenter
+              = f.text_field :commenter, class: 'form-control', required: true
+            %p
+              = f.label :body
+              = f.text_area :body, class: 'form-control', required: true
+            %p
+              = f.submit class: 'btn btn-lg btn-primary'
 
-
-    = link_to 'Edit', edit_professional_path(@professional)
-    \|
-    = link_to 'Back', professionals_path
+  .row
+    .col-md-2
+      = link_to 'Edit', edit_professional_path(@professional)
+      \|
+      = link_to 'Back', professionals_path

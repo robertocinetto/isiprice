@@ -44,12 +44,13 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 group :development do
   gem 'guard'
 
-  #you need to run "guard init livereload"
+  #y ou need to run "guard init livereload"
   gem 'guard-livereload', require: false
 
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
+  gem 'seed_dump'
 end
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

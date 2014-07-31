@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20140728135045) do
   create_table "comments", force: true do |t|
     t.string   "commenter"
     t.string   "body"
+    t.boolean  "approved"
     t.integer  "professional_id"
     t.datetime "created_at"
     t.datetime "updated_at"

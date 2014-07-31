@@ -4,6 +4,7 @@ class CreateProfessionals < ActiveRecord::Migration
       t.string :name
       t.string :last_name
       t.string :email
+      t.string :profile_img
 
       t.timestamps
     end
