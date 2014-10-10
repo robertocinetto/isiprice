@@ -166,6 +166,7 @@ GEM
     multi_json (1.10.1)
     mysql2 (0.3.16)
     orm_adapter (0.5.0)
+    pg (0.15.1)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
     polyglot (0.3.5)
@@ -280,6 +281,7 @@ DEPENDENCIES
   jquery-rails
   meta_request
   mysql2
+  pg (= 0.15.1)
   rails (= 4.1.0)
   rails_12factor (= 0.0.2)
   rmagick
