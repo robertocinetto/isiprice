@@ -1,0 +1,67 @@
+@import "globals/all";
+
+/* ==========================================================================
+   Menu module (navbar- prefix)
+========================================================================== */
+
+.navbar-default {
+  background: $transparent;
+}
+
+.navbar {
+  z-index: 1;
+  margin-bottom: 0;
+  border: 0;
+  font-family: 'Open Sans Condensed', Arial, Helvetica, sans-serif;
+  .navbar-nav {
+    background: $transparent;
+  }
+  .navbar-brand {
+    @include replace-text-with-dimensions('logos/logo_isiprice.png');
+    display: block;
+  }
+  .nav{
+    text-transform: uppercase;
+  }
+}
+
+.nav-mobile {
+  .list-group-item {
+    border: 0;
+    padding: 0;
+    text-align: center;
+  }
+  a {
+    font-weight: bold;
+    display: block;
+    padding: 10px 10px;
+  }
+}
+
+
+
+@media (min-width: $screen-sm) {
+  .navbar-alt {
+  }
+}
+
+@media (min-width: $screen-md) {
+  .navbar {
+    font-size: 14px;
+    li a {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-desktop) {
+  .navbar {
+    font-size: 16px;
+    line-height: 22px;
+    li a {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}

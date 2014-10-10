@@ -1,0 +1,270 @@
+---
+:analytics_id:
+  :cate: Generale
+  :edit: false
+  :valu: UA-6026125-43
+:analytics_page_id:
+  :cate: Generale
+  :edit: false
+  :valu: a3222364w6042413p6241230
+:bank_payment_method_howto:
+  :cate: Ecommerce
+  :edit: true
+  :valu: "Come modalità di pagamento Lei ha scelto il pagamento anticipato.\r\nDesideriamo
+    spedirLe il suo ordine prima possibile. ..."
+  :desc: Testo istruzioni pagamento tramite bonifico bancario
+:banner_styles:
+  :cate: Generale
+  :edit: false
+  :valu:
+    :homepage: 700x300!
+    :homepage_mini: 236x82!
+    :inside: 600x200!
+    :index_thumb: 80x30#
+    :icon: 32x32!
+:company_facebook:
+  :cate: Generale
+  :desc: Link completo pagina facebook aziendale
+  :edit: true
+  :valu: https://www.facebook.com/pages/Sarto-antonio/144319828937080
+:company_youtube:
+  :cate: Generale
+  :desc: Link completo canale youtube
+  :edit: true
+  :valu: https://www.youtube.com/SartoAntonioCycles
+:company_pinterest:
+  :cate: Generale
+  :desc: Link completo pagina pinterest
+  :edit: true
+  :valu: http://www.pinterest.com/SartoCycles/
+:company_info:
+  :cate: Generale
+  :desc: Informazioni dell'azienda
+  :edit: true
+  :valu: © 2014 SARTO - Via Arno, 65/67 - 30030 - Mellaredo di Pianiga - VE - ITALY
+:company_name:
+  :cate: Generale
+  :desc: Nome dell'azienda
+  :edit: true
+  :valu: Sarto Antonio
+:default_iva:
+  :cate: Ecommerce
+  :desc: Valore di default dell'iva in percentuale
+  :edit: true
+  :valu: 21
+:shipping_cost_with_iva:
+  :cate: Ecommerce
+  :desc: Le spese di spedizione hanno l'IVA?
+  :edit: true
+  :valu: false
+:facebook_app_id:
+  :cate: Generale
+  :desc: Id dell'applicazione Facebook
+  :edit: true
+  :valu: 1495910050641107
+:facebook_app_secret:
+  :cate: Generale
+  :desc: Secret code dell'applicazione Facebook
+  :edit: false
+  :valu: d5aa354c9764abef4a6fda9ead9837c8
+:facebook_discount:
+  :cate: Ecommerce
+  :desc: Sconto sul carrello che si ottiene condividento su Facebook
+  :edit: true
+  :valu: 1.0
+:facebook_sharer_description:
+  :cate: Ecommerce
+  :desc: Descrizione sul feed di condivisione Facebook
+  :edit: true
+  :valu: Visita il nostro store online! Un sacco di prodotti a prezzi imbattibili
+    ti aspettano.
+:gmap_address:
+  :cate: Generale
+  :desc: Query per otternere la gmap
+  :edit: true
+  :valu: Via Arno, 65/67  Mellaredo di Pianiga Venezia ITALY
+:icon_styles:
+  :cate: Generale
+  :edit: false
+  :valu:
+    :a: 16x16>
+    :b: 32x32>
+    :c: 64x64>
+    :col12: 1200x
+:image_styles:
+  :cate: Generale
+  :edit: false
+  :valu:
+    :a: 16x16!
+    :b: 80x30#
+    :c: 32x32!
+    :d: 60x40#
+    :e: 90x60#
+    :col2: 195x
+    :col6: 720x
+    :col8: 750x
+    :fancy: 960x
+    :col12: 1200x
+:invoice_footer:
+  :cate: Ecommerce
+  :desc: Testo nel piè di pagina delle fatture
+  :edit: true
+  :valu: "Footer della mia fattura\r\nseconda riga"
+:main_cat_is_brand:
+  :cate: Ecommerce
+  :desc: Categoria principale è una marca
+  :edit: true
+  :valu: false
+:next_invoice_number:
+  :cate: Ecommerce
+  :desc: La prossima fattura avrà questo numero
+  :edit: true
+  :valu: 20
+:paypal_login:
+  :cate: Ecommerce
+  :desc: Username di PayPal
+  :edit: true
+  :valu: pioz_business_api1.gmail.com
+:paypal_password:
+  :cate: Ecommerce
+  :desc: Password di PayPal
+  :edit: true
+  :valu: WDMX99UJRLDTGXUP
+:paypal_signature:
+  :cate: Ecommerce
+  :desc: Signature di PayPal
+  :edit: true
+  :valu: AWAath1qmXZ4bo6T.-U4Gn0JxpYhAnYsdZCQdLrhMOkMvbMhgF72usdt
+:per_page:
+  :cate: Generale
+  :desc: Numero di elementi da visualizzare per pagina
+  :edit: true
+  :valu: 50
+:properties_to_search:
+  :cate: Ecommerce
+  :desc: Abilitare filtro di ricerca per le seguenti proprietà (separale da una virgola)
+  :edit: true
+  :valu: materiale, taglia, colore, peso, color
+:send_mail_with:
+  :cate: Generale
+  :desc: Invia mail con questo indirizzo mail
+  :edit: true
+  :valu: info@sartoantonio.com
+:receive_mail_to:
+  :cate: Generale
+  :desc: Ricevi le mail inviate dall'ecommerce su questi indirizzi
+  :edit: true
+  :valu: info@sartoantonio.com
+:seo_desc:
+  :cate: SEO
+  :desc: Descrizione dell'applicazione per i motori di ricerca
+  :edit: true
+  :valu: Sarto Antonio Cycles. Carbon cycles handmade and designed in Italy. Made
+    to measure racing frames. Over 50 years experience.
+:seo_keys:
+  :cate: SEO
+  :desc: Parole chiavi per i motori di ricerca
+  :edit: true
+  :valu: carbon, cycles carbon, bicycles, carbon frame, made in italy, custom made,
+    carbon technologies, handmade carbon, frames design, on road frame, off road frame
+:seo_title:
+  :cate: SEO
+  :desc: Titolo dell'applicazione per i motori di ricerca
+  :edit: true
+  :valu: Sarto Antonio top-notch carbon bicycles
+:seo_posts_desc:
+  :cate: SEO
+  :desc: Descrizione dell'applicazione per i motori di ricerca indice news
+  :edit: true
+  :valu: News carbon cycles
+:seo_posts_keys:
+  :cate: SEO
+  :desc: Parole chiavi per i motori di ricerca indice news
+  :edit: true
+  :valu: news sartoantonio, news sarto, news company, news events, news technologies,
+    news, news product
+:seo_posts_title:
+  :cate: SEO
+  :desc: Titolo dell'applicazione per i motori di ricerca indece news
+  :edit: true
+  :valu: News carbon cycles
+:seo_products_desc:
+  :cate: SEO
+  :desc: Descrizione dell'applicazione per i motori di ricerca indice products
+  :edit: true
+  :valu: products carbon cycles
+:seo_products_keys:
+  :cate: SEO
+  :desc: Parole chiavi per i motori di ricerca indice products
+  :edit: true
+  :valu: products sartoantonio, products sarto, products company, products events,
+    products technologies, products, products product
+:seo_products_title:
+  :cate: SEO
+  :desc: Titolo dell'applicazione per i motori di ricerca indece products
+  :edit: true
+  :valu: products carbon cycles
+:shipping_method_formulas:
+  :edit: false
+  :valu:
+    :plus_percent_x:
+      :desc: AGGIUNGE la percentuale al totale del carrello
+      :formula: NET / 100.0 * AAA
+      :variables:
+        :AAA: Valore della percentuale
+    :plus_x:
+      :desc: AGGIUNGE un valore
+      :formula: AAA
+      :variables:
+        :AAA: Valore fisso da aggiungere
+    :plus_x_if_total_major_than_y:
+      :desc: Se il TOTALE del carrello è minore di X allora Y altrimenti Z
+      :formula: if NET < X then Y else Z end
+      :variables:
+        :X: se minore di X
+        :Y: allora questo Y
+        :Z: altrimento questo Z
+    :plus_x_if_weight_major_than_y:
+      :desc: Se il PESO del carrello è minore di X allora Y altrimenti Z
+      :formula: if WEIGHT < X then Y else Z end
+      :variables:
+        :X: se minore di X
+        :Y: allora questo Y
+        :Z: altrimento questo Z
+:site_name:
+  :cate: Generale
+  :desc: Nome del'applicazione web
+  :edit: true
+  :valu: Sarto Antonio Cycles
+:site_url:
+  :cate: Generale
+  :desc: URL dell'applicazione web
+  :edit: true
+  :opts:
+  - url
+  :valu: http://www.sartoantonio.com/
+:store_in_test:
+  :cate: Ecommerce
+  :desc: Store in modalità test
+  :edit: true
+  :valu: false
+:twitter_discount:
+  :cate: Ecommerce
+  :desc: Sconto sul carrello che si ottiene condividento un prodotto su Twitter
+  :edit: true
+  :valu: 1.0
+:use_cf:
+  :valu: false
+  :desc: Richiedere il codice fiscale al cliente per completare l'ordine
+  :edit: true
+  :cate: Ecommerce
+:use_discount:
+  :valu: false
+  :desc: Visualizzare lo step degli sconti nel processo di checkout di un ordine
+  :edit: true
+  :cate: Ecommerce
+:vacation_mode:
+  :cate: Ecommerce
+  :desc: Indica se lo store è in modalità vacanza (non sarà possibile acquistare)
+  :edit: true
+  :valu: false

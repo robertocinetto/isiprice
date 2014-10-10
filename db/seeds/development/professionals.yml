@@ -1,0 +1,17 @@
+records:
+- sprig_id: 1
+  name: Roberto
+  last_name: Cinetto
+  email: roberto.cinetto@gmail.com
+  profile_img: "<%= sprig_file('cina.jpg') %>"
+  profession: Web Developer
+  created_at: 2014-10-10 15:21:54.000000000 Z
+  updated_at: 2014-10-10 15:33:52.000000000 Z
+- sprig_id: 2
+  name: Alex
+  last_name: Dovico
+  email: a.dovico@gmail.com
+  profile_img: "<%= sprig_file('alex.jpg') %>"
+  profession: Progettista Elettrico
+  created_at: 2014-10-10 15:21:54.000000000 Z
+  updated_at: 2014-10-10 15:33:46.000000000 Z

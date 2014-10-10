@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 20140728135045) do
     t.string   "last_name"
     t.string   "email"
     t.string   "profile_img"
+    t.string   "profession"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
