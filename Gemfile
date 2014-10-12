@@ -46,6 +46,9 @@ gem 'carrierwave'
 # you need to run "rails generate active_admin:install" and migrate
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+gem 'sprig'
+gem 'sprig-reap'
+
 group :development do
   gem 'guard'
 
@@ -56,8 +59,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'seed_dump'
-  gem 'sprig'
-  gem 'sprig-reap'
 end
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
