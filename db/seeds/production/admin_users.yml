@@ -1,0 +1,14 @@
+records:
+- sprig_id: 1
+  email: admin@admin.com
+  encrypted_password: "$2a$10$3movhTSKQbMRt8PhdaTUde7Lt7dGY6vQDpFSFt.kNb4GTxyePdD0u"
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 2014-10-13 12:47:25.000000000 Z
+  sign_in_count: 2
+  current_sign_in_at: 2014-10-13 12:47:25.000000000 Z
+  last_sign_in_at: 2014-10-12 20:49:17.000000000 Z
+  current_sign_in_ip: 127.0.0.1
+  last_sign_in_ip: 127.0.0.1
+  created_at: 2014-10-12 20:49:05.000000000 Z
+  updated_at: 2014-10-13 12:47:25.000000000 Z
