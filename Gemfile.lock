@@ -288,9 +288,9 @@ DEPENDENCIES
   jquery-rails
   meta_request
   mysql2
-  pg (= 0.15.1)
+  pg
   rails (= 4.1.0)
-  rails_12factor (= 0.0.2)
+  rails_12factor
   rmagick
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
