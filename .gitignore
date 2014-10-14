@@ -17,8 +17,8 @@ db/schema.rb
 db/sphinx/*
 Guardfile
 log/*
-public/assets
-public/uploads
+#public/assets
+#public/uploads
 public/ckeditor_assets
 solr/
 coverage/
