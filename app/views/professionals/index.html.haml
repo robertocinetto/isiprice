@@ -1,22 +1,50 @@
-.container
+.container.search-filters
   .row
     .col-md-6
-      %h1 Listing professionals
 
-  - @professionals.each do |professional|
-    .row.professional
-      .col-md-2= image_tag professional.profile_img.url(:tiny).to_s
-      .col-md-2
-        = professional.name
-        = professional.last_name
-      .col-md-2
-        = professional.profession
-      .col-md-2
-        = link_to 'Show', professional
-        %br/
-        = link_to 'Edit', edit_professional_path(professional)
-      / .col-md-2= link_to 'Destroy', professional, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      = form_tag professionals_path,  {:method => :get, :role => "form", :class => 'form-inline'} do
+        .form-group
+          = text_field_tag :search, params[:search], :class => 'form-control'
+          = select_tag :distance, "<option>5</option><option>10</option><option>20</option><option>50</option>".html_safe, :class => 'form-control'
+          = submit_tag "Search Near", :name => nil, :class => 'btn btn-default'
+          = submit_tag "Reset",  :class => 'btn btn-success'
 
 
-  .row
-    / .col-md-2= link_to 'New Professional', new_professional_path, :class => 'btn btn-default'
+
+
+/ %form{:role => "form"}
+/   .form-group
+/     %label{:for => "exampleInputEmail1"} Email address
+/     %input#exampleInputEmail1.form-control{:placeholder => "Enter email", :type => "email"}/
+/   .form-group
+/     %label{:for => "exampleInputPassword1"} Password
+/     %input#exampleInputPassword1.form-control{:placeholder => "Password", :type => "password"}/
+/   .form-group
+/     %label{:for => "exampleInputFile"} File input
+/     %input#exampleInputFile{:type => "file"}/
+/     %p.help-block Example block-level help text here.
+/   .checkbox
+/     %label
+/       %input{:type => "checkbox"}/
+/       Check me out
+/   %button.btn.btn-default{:type => "submit"} Submit
+
+
+.container.professionals
+  - if @professionals
+    - @professionals.each do |professional|
+      .row.professional.vcenter
+        .col-md-2
+          = link_to image_tag(professional.profile_img.url(:tiny).to_s, :class => 'img-circle'), professional
+        .col-md-2
+          = professional.name
+          = professional.last_name
+        .col-md-2
+          = professional.profession
+        .col-md-2
+          = professional.address
+        .col-md-2
+          = link_to 'Visualizza', professional
+          / %br/
+          / = link_to 'Edit', edit_professional_path(professional)
+        / .col-md-2= link_to 'Destroy', professional, :method => :delete, :data => { :confirm => 'Are you sure?' }

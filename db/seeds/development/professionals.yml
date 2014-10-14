@@ -15,3 +15,64 @@ records:
   profession: Progettista Elettrico
   created_at: 2014-10-10 15:21:54.000000000 Z
   updated_at: 2014-10-10 15:33:46.000000000 Z
+
+
+
+
+
+
+- sprig_id: 3
+  name: Roberto
+  last_name: Cinetto
+  email: roberto.cinetto@gmail.com
+  profile_img: "<%= sprig_file('cina3b42182e-31a3-40fb-b77a-276a0c054b06.jpg') %>"
+  profession: Web Developer
+  address: Vicolo Po 8, Casalserugo, Padova
+  latitude: 45.3428
+  longitude: 11.8943
+  created_at: 2014-10-10 15:21:54.000000000 Z
+  updated_at: 2014-10-12 21:01:25.000000000 Z
+- sprig_id: 3
+  name: Alex
+  last_name: Dovico
+  email: a.dovico@gmail.com
+  profile_img: "<%= sprig_file('alex166db25b-2afc-4a0a-81c8-0f70a07b0d37.jpg') %>"
+  profession: Progettista Elettrico
+  address: Via Cadiceto 10, Vigonovo, Venezia
+  latitude: 45.3805
+  longitude: 11.9934
+  created_at: 2014-10-10 15:21:54.000000000 Z
+  updated_at: 2014-10-12 21:16:58.000000000 Z
+- sprig_id: 3
+  name: Luisa
+  last_name: Malotto
+  email: luisa@email.com
+  profile_img: "<%= sprig_file('80409746-Happy-woman.jpg') %>"
+  profession: Veterinaio
+  address: Catania
+  latitude: 37.5079
+  longitude: 15.083
+  created_at: 2014-10-13 12:55:58.000000000 Z
+  updated_at: 2014-10-13 12:55:58.000000000 Z
+- sprig_id: 4
+  name: Donna
+  last_name: Incariera
+  email: donna@email.com
+  profile_img: "<%= sprig_file('Career-Woman.jpg') %>"
+  profession: Avvocato
+  address: Milano
+  latitude: 45.4654
+  longitude: 9.18592
+  created_at: 2014-10-13 12:57:25.000000000 Z
+  updated_at: 2014-10-13 12:57:25.000000000 Z
+- sprig_id: 5
+  name: Memento
+  last_name: Mori
+  email: memento@mori.com
+  profile_img: "<%= sprig_file('Guy_Pearce.jpg') %>"
+  profession: Giardiniere
+  address: Legnaro, Padova
+  latitude: 45.3456
+  longitude: 11.9639
+  created_at: 2014-10-13 12:58:12.000000000 Z
+  updated_at: 2014-10-13 12:58:12.000000000 Z

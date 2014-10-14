@@ -1,5 +1,5 @@
 %nav.navbar.navbar-default{:role => "navigation"}
-  .container-fluid
+  .container
     / Brand and toggle get grouped for better mobile display
     .navbar-header
       %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
@@ -9,21 +9,21 @@
         %span.icon-bar
       = link_to yield(:h1) + Configuration.site_name, root_path, class: 'navbar-brand', :title => 'Isi Price: il migliore professionista che ti serve ora al prezzo migliore!'
     / Collect the nav links, forms, and other content for toggling
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-right
-        %li
-          %a{:href => "#"} Link
-        %li.dropdown
-          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-            Dropdown
-            %span.caret
-          %ul.dropdown-menu{:role => "menu"}
-            %li
-              %a{:href => "#"} Action
-            %li
-              %a{:href => "#"} Another action
-            %li
-              %a{:href => "#"} Something else here
-            %li.divider
-            %li
-              %a{:href => "#"} Separated link
+    / #bs-example-navbar-collapse-1.collapse.navbar-collapse
+    /   %ul.nav.navbar-nav.navbar-right
+    /     %li
+    /       %a{:href => "#"} Link
+    /     %li.dropdown
+    /       %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+    /         Dropdown
+    /         %span.caret
+    /       %ul.dropdown-menu{:role => "menu"}
+    /         %li
+    /           %a{:href => "#"} Action
+    /         %li
+    /           %a{:href => "#"} Another action
+    /         %li
+    /           %a{:href => "#"} Something else here
+    /         %li.divider
+    /         %li
+    /           %a{:href => "#"} Separated link

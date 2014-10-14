@@ -6,6 +6,9 @@ class CreateProfessionals < ActiveRecord::Migration
       t.string :email
       t.string :profile_img
       t.string :profession
+      t.string :address
+      t.float  :latitude
+      t.float  :longitude
 
       t.timestamps
     end

@@ -37,7 +37,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   version :tiny do
-    process :resize_to_fill => [100, 100, Magick::CenterGravity]
+    process :resize_to_fill => [70, 70, Magick::CenterGravity]
   end
 
   # Add a white list of extensions which are allowed to be uploaded.

@@ -13,7 +13,7 @@ ActiveAdmin.register Professional do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-  permit_params :name, :last_name, :email, :profile_img, :profession
+  permit_params :name, :last_name, :email, :profile_img, :profession, :address, :latitude, :longitude
 
 
 end

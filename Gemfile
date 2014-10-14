@@ -36,6 +36,8 @@ gem 'bootstrap-sass', '~> 3.2.0'
 # @import "bootstrap-sprockets";
 # @import "bootstrap";
 # //= require bootstrap-sprockets
+gem 'bootstrap_form'
+gem "font-awesome-rails"
 
 gem 'autoprefixer-rails'
 gem 'devise', '~> 3.2.0'
@@ -50,23 +52,23 @@ gem 'sprig'
 gem 'sprig-reap'
 
 group :development do
-  gem 'guard'
+	gem 'guard'
 
-  #y ou need to run "guard init livereload"
-  gem 'guard-livereload', require: false
+	#y ou need to run "guard init livereload"
+	gem 'guard-livereload', require: false
 
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'meta_request'
-  gem 'seed_dump'
+	gem 'better_errors'
+	gem 'binding_of_caller'
+	gem 'meta_request'
+	gem 'seed_dump'
 end
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
 group :production do
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
+	gem 'pg', '0.15.1'
+	gem 'rails_12factor', '0.0.2'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -80,3 +82,4 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'geocoder'
