@@ -7,6 +7,12 @@ class Professional < ActiveRecord::Base
 	validates :last_name, presence: true
 	validates :email, presence: true, uniqueness: true
 	validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
+	validates :service_type, presence: true
+	validates :cap, presence: true
+	validates :city, presence: true
+	validates :county, presence: true
+	validates :country, presence: true
+	validates :cell, presence: true, uniqueness: true
 
 	geocoded_by :address
 	after_validation :geocode, :if => :address_changed?

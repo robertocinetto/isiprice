@@ -1,4 +1,7 @@
 it:
+ layouts:
+  application:
+   go_to_admin: "Pannello di controllo"
  professionals:
   index:
    search: "Cerca"

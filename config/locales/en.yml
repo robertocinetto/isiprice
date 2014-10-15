@@ -20,6 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+ layouts:
+  application:
+   go_to_admin: "Admin Panel"
  professionals:
   index:
    search: "Search"

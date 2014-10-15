@@ -1,17 +1,24 @@
 Rails.application.routes.draw do
-  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
+
+  scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
+
   resources :professionals do
     resources :comments
   end
+
   get '/:locale' => 'professionals#index'
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
+
 end
-devise_for :admin_users, ActiveAdmin::Devise.config
-ActiveAdmin.routes(self)
+
 # The priority is based upon order of creation: first created -> highest priority.
 # See how all your routes lay out with "rake routes".
 
-get '*path', to: redirect("#{I18n.default_locale}/%{path}")
-# get '', to: redirect("#{I18n.default_locale}/")
+get '*path', to: redirect("/#{I18n.default_locale}/%{path}"), constraints: lambda { |req| !req.path.starts_with? "/#{I18n.default_locale}/" }
+get '', to: redirect("/#{I18n.default_locale}")
 # You can have the root of your site routed with "root"
 root 'professionals#index'
 
