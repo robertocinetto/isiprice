@@ -2,6 +2,11 @@ ActiveAdmin.setup do |config|
   config.namespace :admin do |admin|
     admin.build_menu :utility_navigation do |menu|
 
+      menu.add :label => proc{ display_name current_active_admin_user},
+        :url => '#',
+        :id => 'current_user',
+        :if => proc{ current_active_admin_user? }
+      admin.add_logout_button_to_menu menu
     end
   end
   # == Site Title
@@ -14,7 +19,7 @@ ActiveAdmin.setup do |config|
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
-  config.site_title_link = :root
+  # config.site_title_link = "/"
 
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)

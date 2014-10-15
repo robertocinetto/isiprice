@@ -23,6 +23,7 @@ en:
  layouts:
   application:
    go_to_admin: "Admin Panel"
+   select_language: "Language"
  professionals:
   index:
    search: "Search"

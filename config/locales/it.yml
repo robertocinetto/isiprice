@@ -2,6 +2,7 @@ it:
  layouts:
   application:
    go_to_admin: "Pannello di controllo"
+   select_language: "Lingua"
  professionals:
   index:
    search: "Cerca"

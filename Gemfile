@@ -47,6 +47,7 @@ gem 'carrierwave'
 
 # you need to run "rails generate active_admin:install" and migrate
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'country_select'
 
 gem 'sprig'
 gem 'sprig-reap'

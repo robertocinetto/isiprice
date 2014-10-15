@@ -17,4 +17,24 @@ class Professional < ActiveRecord::Base
 	geocoded_by :address
 	after_validation :geocode, :if => :address_changed?
 
+
+	def self.service_types
+		SERVICE_TYPES
+	end
+
+	def self.service_types_for_select
+		service_types.enum_for(:each_with_index).to_a
+	end
+
+	def service_type_name
+		Professional.service_types[service_type] rescue "non existent"
+	end
+
+
+	SERVICE_TYPES = [
+		"manodopera",
+		"servizio",
+		"consulenza"
+	]
+
 end
