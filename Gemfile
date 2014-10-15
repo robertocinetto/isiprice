@@ -61,6 +61,7 @@ group :development do
 	gem 'binding_of_caller'
 	gem 'meta_request'
 	gem 'seed_dump'
+	gem 'quiet_assets'
 end
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

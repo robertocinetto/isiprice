@@ -14,6 +14,8 @@ class ProfessionalsController < InheritedResources::Base
 			@professionals = Professional.all
 		end
 
-		@city = request.location.city
+		city = request.location.ip
+		logger.debug city
+
 	end
 end
