@@ -14,7 +14,7 @@ class ProfessionalsController < InheritedResources::Base
 			@professionals = Professional.all
 		end
 
-		@city = request.location.city
+		@city = request.location
 		logger.debug "Your city is #{@city}"
 
 	end
