@@ -50,6 +50,8 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 
 gem 'sprig'
 gem 'sprig-reap'
+gem 'meta_request'
+
 
 group :development do
 	gem 'guard'
@@ -59,7 +61,6 @@ group :development do
 
 	gem 'better_errors'
 	gem 'binding_of_caller'
-	gem 'meta_request'
 	gem 'seed_dump'
 	gem 'quiet_assets'
 end
