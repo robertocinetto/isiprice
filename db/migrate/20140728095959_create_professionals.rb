@@ -15,7 +15,7 @@ class CreateProfessionals < ActiveRecord::Migration
       t.string :country
       t.float  :latitude
       t.float  :longitude
-      t.integer :cell
+      t.string :cell
       t.string :logo
 
       t.timestamps

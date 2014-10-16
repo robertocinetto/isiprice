@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 20141015105817) do
     t.string   "country"
     t.float    "latitude"
     t.float    "longitude"
-    t.integer  "cell"
+    t.string  "cell"
     t.string   "logo"
     t.datetime "created_at"
     t.datetime "updated_at"

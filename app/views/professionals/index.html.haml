@@ -6,24 +6,33 @@
         .form-group
           = text_field_tag :search, params[:search], :class => 'form-control'
           = select_tag :distance, options_for_select([ "5 km", "10 km", "20 km", "50 km", "200 km", "400 km" ], "#{params[:distance].present? ? params[:distance] : '20 km' }"), :class => 'form-control'
+          = select_tag :profession, options_for_select(@professions), :class => 'form-control'
           = submit_tag "#{t '.search'}", :name => nil, :class => 'btn btn-default'
-          = submit_tag "Reset",  :class => 'btn btn-success'
+          / = submit_tag "Reset",  :class => 'btn btn-success'
+.container.map
+
 
 .container.professionals
+  .row
+    .col-md-2
+    .col-md-4
+      PROFESSIONISTA
+    .col-md-4
+      VALUTAZIONE
   - if @professionals
     - @professionals.each do |professional|
       .row.professional.vcenter
         .col-md-2
           = link_to image_tag(professional.profile_img.url(:tiny).to_s, :class => 'img-circle'), professional
+        .col-md-4
+          %p.bold= professional.name + ' ' + professional.last_name
+          %p= professional.profession
+          %p= professional.city
+        .col-md-4
         .col-md-2
-          = professional.name
-          = professional.last_name
-        .col-md-2
-          = professional.profession
-        .col-md-2
-          = professional.address
-        .col-md-2
-          = link_to 'Visualizza', professional
+          %p= link_to 'Visualizza', professional,  :class => 'btn btn-success'
+
+
           / %br/
           / = link_to 'Edit', edit_professional_path(professional)
         / .col-md-2= link_to 'Destroy', professional, :method => :delete, :data => { :confirm => 'Are you sure?' }
