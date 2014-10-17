@@ -6,7 +6,7 @@
         .form-group
           = text_field_tag :search, params[:search], :class => 'form-control'
           = select_tag :distance, options_for_select([ "5 km", "10 km", "20 km", "50 km", "200 km", "400 km" ], "#{params[:distance].present? ? params[:distance] : '20 km' }"), :class => 'form-control'
-          = select_tag :profession, options_for_select(@professions), :class => 'form-control'
+          / = select_tag :profession, options_for_select(@professions), :class => 'form-control'
           = submit_tag "#{t '.search'}", :name => nil, :class => 'btn btn-default'
           / = submit_tag "Reset",  :class => 'btn btn-success'
 .container.map
